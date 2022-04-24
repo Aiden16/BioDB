@@ -9,7 +9,9 @@
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<?php
+session_start();
+?>
 <body class="d-flex text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
@@ -18,16 +20,18 @@
                 <nav class="nav nav-masthead justify-content-center float-md-right">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">Know More</a>
-                    <a class="nav-link" href="Admin/loginPage.php">Login</a>
-                    <a class="nav-link" href="Users/register.php">Register</a>
-                    <a class="nav-link" href="#">Logout</a>
+                    <?php if(isset($_SESSION['User_Username']) || isset($_SESSION['Username'])) ?>
+                    <!-- <a class="nav-link" href="#">Logout</a> -->
+                        <a class="nav-link" href="database/loginPage.php">Login</a>
+                        <a class="nav-link" href="Users/register.php">Register</a>
+
                 </nav>
             </div>
         </header>
         <main class="px-3">
             <p class="lead"> <h2>Welcome to Oral Cancer Database</h2> <br>
                <h5>Add a data to help world fight Cancer!</h5></p>
-            <a href="#" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">Add Database</a>
+            <a href="database/showDB.php" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">See Database</a>
         </main>
 
         <footer class="mt-auto text-white-50">

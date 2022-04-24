@@ -18,5 +18,5 @@ $sql="insert into users_reg(Name,Email,Mobile,Username,Password,Status) VALUES (
 )";
 var_dump($sql);
 if(mysqli_query($con,$sql)){
-    echo '<script type="text/javascript">alert("Registration Completed Succesfully");window.location=\'register.php\';</script>';
+    echo '<script type="text/javascript">alert("Registration Completed Succesfully");window.location=\'../database/loginPage.php\';</script>';
 }
