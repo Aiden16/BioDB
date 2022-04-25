@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <?php
-session_start();
-if(isset($_SESSION['User_Username'])){
-}
-else{
-    header('location:../database/loginPage.php');
+// session_start();
+// if(isset($_SESSION['User_Username'])){
+// }
+// else{
+//     header('location:../database/loginPage.php');
 
-}
+// }
 $ID = $_GET['id'];
 // echo $ID;
 // $Status = 'Pending';
@@ -29,7 +29,7 @@ $row = mysqli_fetch_array($result);
     <div class="cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
         <header class="mb-auto">
             <div>
-                <h3 class="float-md-left mb-0 text-white">Oral Cancer Database</h3>
+                <h3 class="float-md-left mb-0 text-white">Oral Pre Cancer Database</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-right">
                     <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                     <a class="nav-link" href="logout.php">Logout</a>
@@ -58,8 +58,8 @@ $row = mysqli_fetch_array($result);
     <li class="list-group-item"><h5><a href="<?php echo $row['PubMed'] ?>">PubMed</a></h3></li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Go Back</a>
-    <a href="#" class="card-link">Another link</a>
+    <a href="showDB.php" class="card-link">Go Back</a>
+    <!-- <a href="#" class="card-link">Another link</a> -->
   </div>
 </div>
 </div>

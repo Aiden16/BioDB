@@ -16,7 +16,7 @@ session_start();
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="mb-auto">
             <div>
-                <h3 class="float-md-left mb-0">Oral Cancer Database</h3>
+                <h3 class="float-md-left mb-0">Oral Pre Cancer Database</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-right">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">Know More</a>
@@ -29,7 +29,7 @@ session_start();
             </div>
         </header>
         <main class="px-3">
-            <p class="lead"> <h2>Welcome to Oral Cancer Database</h2> <br>
+            <p class="lead"> <h2>Welcome to Oral Pre Cancer Database</h2> <br>
                <h5>Add a data to help world fight Cancer!</h5></p>
             <a href="database/showDB.php" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">See Database</a>
         </main>
